@@ -1,0 +1,6 @@
+Adding a scene:
+
+Add div scene
+Add show hide in jQuery
+Add dialogue in css
+Add in html
