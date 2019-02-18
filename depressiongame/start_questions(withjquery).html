@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>One's Alternative</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $("input[type='button']").click(function(){
+                    var saddnessAnswer = $("input[name='sadness']:checked").val();
+                    if(saddnessAnswer>0){
+                        alert(saddnessAnswer);
+                    } 
+                    else{
+                        alert("Not sad");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <style>
+       
+    </style>
+        
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="whole_screen">
+                    <!-- questionnaire -->
+                    <div class="beckQuestionnaire">
+                        <form><!--copy paste niyo simula dito-->
+                            <h6>1. Sadness</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="sadness"  value="0">I do not feel sad.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="sadness" value="1">I feel sad much of the time.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="sadness" value="2">I am sad all the time.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="sadness" value="3">I am so sad or unhappy I can't stand it.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+                        
+                        
+				        <form><!--copy paste niyo simula dito-->
+                            <h6>2. Pessimism</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="pessimism" value="0">I am not discouraged about my future.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="pessimism" value="1">I feel more discouraged about my future than I used to.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="pessimism" value="2">I do not expect things to work out for me.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="pessimism" value="3">I feel my future is hopeless and will only get worse.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>3. Past Failure</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="pastfailure" value="0">I do not feel like a failure.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="pastfailure" value="1">I have failed more than I should have.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="pastfailure" value="2">As I look back, I see a lot of failures.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="pastfailure" value="3">I feel I am a total failure as a person.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>4. Loss of Pleasure</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofpleasure" value="0">I get as much pleasure as I ever did from the things I enjoy.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofpleasure" value="1">I don't enjoy things as much as I used to.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofpleasure" value="2">I get very little pleasure from the things I used to enjoy.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofpleasure" value="3">I can't get any pleasure from the things I used to enjoy.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>5. Guilty Feelings</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="guiltyfeelings" value="0">I don't feel particularly guilty.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="guiltyfeelings" value="1">I feel guilty over many things I have done or should have done.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="guiltyfeelings" value="2">I feel quite guilty most of the time.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="guiltyfeelings" value="3">I feel guilty all the time.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>6. Punishment Feelings</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="punishmentfeelings" value="0">I don't feel I am being punish.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="punishmentfeelings" value="1">I feel I may be punished.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="punishmentfeelings" value="2">I expect to be punished.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="punishmentfeelings" value="3">I feel I am being punished.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>7. Self-Dislike</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="selfdislike" value="0">I feel the same about myself as ever.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="selfdislike" value="1">I have lost confidence in myself.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="selfdislike" value="2">I am disappointed in myself.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="selfdislike" value="3">I dislike myself.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>8. Self-Criticalness</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="selfcriticalness" value="0">I don't criticize or blame myself more than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="selfcriticalness" value="1">I am more critical of myself than I used to be.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="selfcriticalness" value="2">I criticize myself for all of my faults.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="selfcriticalness" value="3">I blame myself for everything bad that happens.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>9. Suicidal Thoughts or Wishes</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="suicidalthoughts" value="0">I don't have any thoughts of killing myself.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="suicidalthoughts" value="1">I have thoughts of kiling myself, but I would not carry them out .</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="suicidalthoughts" value="2">I would like to kill myself.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="suicidalthoughts" value="3">I would kill myself if I had the chance.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>10. Crying</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="crying" value="0">I don't cry anymore than I used to.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="crying" value="1">I cry more than I used to.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="crying" value="2">I cry over every little thing.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="crying" value="3">I feel like crying, but I can't.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>11. Agitation</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="agitation" value="0">I am no more restless or wound up than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="agitation" value="1">I feel more restless or wound up than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="agitation" value="2">I am so restless or agitated, It's hard to stay still.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="agitation" value="3">I am so restless or agitated that I have to keep moving or doing something.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>12. Loss of Interest</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterest" value="0">I have not lost interest in other people or activities.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterest" value="1">I am less interested in other people or thing than before.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterest" value="2">I have lost most of my interest in other people or things.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterest" value="3">It's hard to get interested in anything.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>13. Indecisiveness</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="indecisiveness" value="0">I make decisions about as well as ever.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="indecisiveness" value="1">I find more difficult to make decisions than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="indecisiveness" value="2">I have much greater difficulty in making decisions than I used to.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="indecisiveness" value="3">I have trouble making any decisions.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>14. Worthlessnes</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="worthlessnes" value="0">I do not feel I am worthless.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="worthlessnes" value="1">I don't consider myself as worhtwhile and useful as I used to.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="worthlessnes" value="2">I feel more worthless compared to others.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="worthlessnes" value="3">I feel utterly worthless.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>15. Loss of Energy</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofenergy" value="0">I have as much energy as ever.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofenergy" value="1">I have less energy than I used to.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofenergy" value="2">I don't have enough energy to do very much.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofenergy" value="3">I don't have enough energy to do anything.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>16. Changes in Sleeping patterns</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="changesinsleep" value="0">I have not experienced any change in my sleeping.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="changesinsleep" value="1">I sleep somewhat more than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="changesinsleep" value="2">I sleep somewhat less than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="changesinsleep" value="3">I sleep a lot more than usual.</label>
+                            </div>
+							 <div class="radio">
+                              <label><input type="radio" name="changesinsleep" value="4">I sleep a lot less than usual.</label>
+                            </div>
+							 <div class="radio">
+                              <label><input type="radio" name="changesinsleep" value="5">I sleep most of the day.</label>
+                            </div>
+							 <div class="radio">
+                              <label><input type="radio" name="changesinsleep" value="6">I wake up 1-2 hours early and can't go back to sleep.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>17. Irritability</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="irritability" value="0">I am not more irritable than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="irritability" value="1">I am more irritable than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="irritability" value="2">I am much more irritable than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="irritability" value="3">I am irritable all time.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>18. Changes in Appetite</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="changesinappetite" value="0">I have not experienced any change in my appetite.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="changesinappetite" value="1">My appetite is somewhat less than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="changesinappetite" value="2">My appetite is somewhat greater than usual.</label>
+                            </div>
+							<div class="radio">
+                              <label><input type="radio" name="changesinappetite" value="3">My appetiteis much less than before.</label>
+                            </div>
+							<div class="radio">
+                              <label><input type="radio" name="changesinappetite" value="4">My appetiteis much greater than before.</label>
+                            </div>
+							<div class="radio">
+                              <label><input type="radio" name="changesinappetite" value="5">I have no appetite at all.</label>
+                            </div>
+							<div class="radio">
+                              <label><input type="radio" name="changesinappetite" value="6">I crave food all the time.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>19. Concentration Difficulty</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="concentration" value="0">I can concentrate as well as ever.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="concentration" value="1">I can't concentrate as well as usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="concentration" value="2">It's hard to keep my mind on anything for very long.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="concentration" value="3">I find I can't concentrate on anything.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>20. Tiredness or Fatigue</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="tiredness" value="0">I am no more tired or fatigued than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="tiredness" value="1">I get more tired or fatigued more easily than usual.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="tiredness" value="2">I am too tired or fatigued to do a lot of things I used to do.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="tiredness" value="3">I am too tired or fatigued to do most of the things I used to do.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+						                        <form><!--copy paste niyo simula dito-->
+                            <h6>21. Loss of Interest in Sex</h6>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterestinsex" value="0">I have not noticed any recent change in my interest in sex.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterestinsex" value="1">I am less interested in sex than I used to be.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterestinsex" value="2">I am much less interested in sex now.</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="lossofinterestinsex" value="3">I have lost interest in sex completely.</label>
+                            </div>
+                        </form><!--syempre hanggang dito-->
+                        <p><input type="button" value="Submit"></p>
+                    </div>
+                </div> <!-- whole screen id end-->
+            </div> <!-- row class end -->
+        </div> <!--container class end-->
+        
+    </body>
+    
+</html>
