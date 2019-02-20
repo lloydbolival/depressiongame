@@ -26,7 +26,13 @@
                 $(".fourthscene").css("display","none");
                 $(".fifthscene").css("display","none");
                 
+                $(".notsavinggirl").css("display","none"); //not saving smile path hide
+                $(".notsavinggirl2").css("display","none"); //not saving smile path hide (part 2)
+                $(".notsavinggirl3").css("display","none"); //not saving smile path hide (part 3) END
+                
+                $(".sixthscene").css("display","none");
                 //dialogues hide
+                
                 $(".dialogue2").css("display","none");
                 $(".dialogue3").css("display","none");
                 $(".dialogue4").css("display","none");
@@ -36,7 +42,15 @@
                 $(".dialogue6footer").css("display","none");
                 $(".dialogue7").css("display","none");
                 $(".dialogue7footer").css("display","none");
+                
+                $(".dialoguenotsavegirl").css("display","none"); //not saving smile path
+                $(".dialoguenotsavegirl2").css("display","none"); //not saving smile path part 2
+                $(".dialoguenotsavegirl3").css("display","none"); //not saving smile path part 3 END
+                
+                $(".dialogue8").css("display","none");
+                $(".dialogue8footer").css("display","none");
                 //dialogues hide end
+                
                 $("#start").click(function(){
                     $(".introduction").fadeIn();
                     $("#intro").get(0).play();
@@ -85,6 +99,7 @@
                     $(".dialogue7").css("display","block");
                     $(".dialogue7footer").css("display","block");
                 });
+                //go to the crying girl path
                 $("#next7").click(function(){
                     $(".dialogue7").css("display","none");
                     $(".fifthscene").css("display","none");
@@ -92,6 +107,53 @@
                     $("#next1").css("display","none");
                     $("#maze").css("display","block");
                     openmaze();
+                });
+                //go to the crying girl path end
+                
+                //dont save the crying girl path
+                $("#notsave").click(function(){
+                    $(".dialogue7").css("display","none");
+                    $(".fifthscene").css("display","none");
+                    $(".dialogue7footer").css("display","none");
+                    
+                    $(".notsavinggirl").css("display","block");
+                    $(".dialoguenotsavegirl").css("display","block");
+                    
+                });
+                $("#nextinnotsavinggirl").click(function(){
+                    $(".notsavinggirl").css("display","none");
+                    $(".dialoguenotsavegirl").css("display","none");
+                    
+                    $(".notsavinggirl2").css("display","block");
+                    $(".dialoguenotsavegirl2").css("display","block");
+                    
+                });
+                $("#nextinnotsavinggirl2").click(function(){
+                    $(".notsavinggirl2").css("display","none");
+                    $(".dialoguenotsavegirl2").css("display","none");
+                    
+                    $(".notsavinggirl3").css("display","block");
+                    $(".dialoguenotsavegirl3").css("display","block");
+                    
+                    
+                });
+                $("#nextinnotsavinggirl3").click(function(){
+                    $(".notsavinggirl3").css("display","none");
+                    $(".dialoguenotsavegirl3").css("display","none");
+                    
+                    $(".sixthscene").css("display","block");
+                    $(".dialogue8footer").css("display","block");
+                    
+                });
+                
+                //dont save the crying girl path end
+                
+                $("#next8").click(function(){
+                    $(".dialogue8").css("display","none");
+                    $(".sixthscene").css("display","none");
+                    $(".dialogue8footer").css("display","none");
+                    
+                    
                 });
             });
         </script>
@@ -347,12 +409,11 @@
 
     function win() {
         end = true;
-        mazec.font = "50px Arial";
-        mazec.textAlign = "center";
-        mazec.fillStyle = 'white';
-        mazec.fillText("You Found Smile!", maze.width / 2, maze.height / 2);
-        mazec.font = "20px Arial";
-        mazec.fillText("Press space to proceed...", maze.width / 2, maze.height / 2 + 50);
+        
+        
+        $("#maze").css("display","none");
+        $(".sixthscene").css("display","block");
+        $(".dialogue8footer").css("display","block");
     }
     function newGame(){
         
@@ -461,6 +522,32 @@
             position:relative;
         }
         .fifthscene{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        /*not saving smile path*/
+        .notsavinggirl{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        .notsavinggirl2{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        .notsavinggirl3{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        /*not saving smile path end*/
+        .sixthscene{
             height: 100%;
             width: 100%;
             align-content: center;
@@ -613,6 +700,95 @@
             
         }
         .dialogueEffect7{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        /*not saving smile path dialogue */
+        .dialoguenotsavegirl{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+        }
+        .dialoguenotsaveEffect{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialoguenotsavegirl2{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+        }
+        .dialoguenotsaveEffect2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialoguenotsavegirl3{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+        }
+        .dialoguenotsaveEffect3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        /*not saving smile path dialogue End*/
+        
+        .dialogue8{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect8{
             /* typing effect*/
             overflow: hidden; 
             border-right: .15em solid white;
@@ -815,6 +991,69 @@
                             <input type="range" min="0" max="3" value="2" step="1" style="display:none;">
                             <canvas id="maze" width="800" height="500"></canvas>
                             <!-- minigame for smile END -->
+                            
+                            <!-- not saving girl path -->
+                            <div class="notsavinggirl"> <!-- Dark forest-->
+                                <img src="Pictures/darkforest1.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <!-- path in saving the girl -->
+                                <div class="dialoguenotsavegirl">
+                                    <p class="dialoguenotsaveEffect">*You decided to not follow the voice*</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="nextinnotsavinggirl" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                        
+                            <div class="notsavinggirl2"> <!-- Dark forest Part 2-->
+                                <img src="Pictures/darkforest2.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialoguenotsavegirl2">
+                                    <p class="dialoguenotsaveEffect2">*Why am I still hearing that voice...*</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="nextinnotsavinggirl2" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                            
+                            <div class="notsavinggirl3"> <!-- Dark forest Part 2-->
+                                <img src="Pictures/darkforest3.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialoguenotsavegirl3">
+                                    <p class="dialoguenotsaveEffect3">*It seems that the voice I'm hearing is coming closer*</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="nextinnotsavinggirl3" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                            <!-- not saving girl path End-->
+                            
+                            <div class="sixthscene"> <!-- seeing smile-->
+                                <img src="Pictures/meetingsmile1.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <!-- path in saving the girl -->
+                                <div class="dialogue8">
+                                    <p class="dialogueEffect8"></p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                            
                         </div>
                         <!-- starting screen end-->
                     </div>
@@ -833,6 +1072,14 @@
                                 <button id="next7" class="btn btn-dark btn-block">Follow the voice...</button>
                                 <button id="notsave" class="btn btn-dark btn-block">Ignore the voice and continue adventure</button>
                             </div>
+                            <!-- path in saving the girl -->
+                            <div class="dialogue8footer" style="background-color: white; color: black; padding: 0px;">
+                                    <p class="dialogueEffect8">*You see a little girl crying...*</p>
+                                <button id="next8" class="btn btn-dark btn-block">Approach the crying girl and speak to her.</button>
+                                <button id="notsave" class="btn btn-dark btn-block">Just pass-by because you don't know her.</button>
+                            </div>
+                            
+                            
                         </div>
                         
                     </div>
