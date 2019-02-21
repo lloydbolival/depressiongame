@@ -25,12 +25,19 @@
                 $(".thirdscene").css("display","none");
                 $(".fourthscene").css("display","none");
                 $(".fifthscene").css("display","none");
+                $(".seventhscene").css("display","none");
+                
+                $(".sixthscene").css("display","none");
+                
+                $(".eighthscene").css("display","none");
+                $(".ninthscene").css("display","none");
+                $(".tenthscene").css("display","none");
                 
                 $(".notsavinggirl").css("display","none"); //not saving smile path hide
                 $(".notsavinggirl2").css("display","none"); //not saving smile path hide (part 2)
                 $(".notsavinggirl3").css("display","none"); //not saving smile path hide (part 3) END
                 
-                $(".sixthscene").css("display","none");
+                
                 //dialogues hide
                 
                 $(".dialogue2").css("display","none");
@@ -49,6 +56,29 @@
                 
                 $(".dialogue8").css("display","none");
                 $(".dialogue8footer").css("display","none");
+                
+                $(".dialogue9").css("display","none");
+                $(".dialogue9other").css("display","none");
+                
+                
+                $(".dialogue10").css("display","none");
+                $(".dialogue11").css("display","none");
+                $(".dialogue11footer").css("display","none");
+                
+                $(".dialogue12").css("display","none");
+                
+                $(".dialogue12other").css("display","none"); //not travel with smile path
+                $(".dialogue13other").css("display","none"); //not travel with smile path part 2 END
+                
+                $(".dialogue13").css("display","none"); 
+                $(".dialogue14").css("display","none");
+                $(".dialogue15").css("display","none");
+                
+                $(".dialogue16").css("display","none");
+                $(".dialogue17").css("display","none");
+                $(".dialogue18").css("display","none");
+                $(".dialogue19").css("display","none");
+                $(".dialogue20").css("display","none");
                 //dialogues hide end
                 
                 $("#start").click(function(){
@@ -153,8 +183,295 @@
                     $(".sixthscene").css("display","none");
                     $(".dialogue8footer").css("display","none");
                     
+                    $(".seventhscene").css("display","block");
+                    $(".dialogue9").css("display","block");
+                });
+                
+                //pass by the girl path
+                $("#passbygirl").click(function(){
+                    $(".dialogue8").css("display","none");
+                    $(".sixthscene").css("display","none");
+                    $(".dialogue8footer").css("display","none");
+                    
+                    $(".seventhscene").css("display","block");
+                    $(".dialogue9other").css("display","block");
+                });
+                $("#next9other").click(function(){
+                    $(".dialogue9other").css("display","none");
+                    
+                    $(".dialogueEffect10part2").css("display","none");
+                    $(".dialogueEffect10part3").css("display","none");
+                    
+                    $(".dialogue10").css("display","block");
+                    $(".dialogueEffect10").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect10part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect10part3").css("display","block");
+                    },6000);
                     
                 });
+                
+                $("#next9").click(function(){
+                    $(".dialogue9").css("display","none");
+                    $(".dialogueEffect10part2").css("display","none");
+                    $(".dialogueEffect10part3").css("display","none");
+                    
+                    $(".dialogue10").css("display","block");
+                    $(".dialogueEffect10").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect10part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect10part3").css("display","block");
+                    },6000);
+                    
+                });
+                
+                $("#next10").click(function(){
+                    
+                    $(".dialogue10").css("display","none");
+                    $(".dialogueEffect11part2").css("display","none");
+                    $(".dialogueEffect11part3").css("display","none");
+                    $(".dialogueEffect11part4").css("display","none");
+                    
+                    $(".dialogue11").css("display","block");
+                    $(".dialogueEffect11").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect11part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect11part3").css("display","block");
+                    },6000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect11part4").css("display","block");
+                    },9000);
+                    setTimeout(function(){;
+                        $(".dialogue11footer").css("display","block");
+                    },12000);
+                    
+                });
+                
+                //travel with smile
+                $("#travelwithgirl").click(function(){
+                    
+                    $(".seventhscene").css("display","none");
+                    $(".dialogue11").css("display","none");
+                    $(".dialogue11footer").css("display","none")
+                    
+                    $(".dialogueEffect12part2").css("display","none");
+                    $(".dialogueEffect12part3").css("display","none");
+                    $(".dialogueEffect12part4").css("display","none");
+                    
+                    $(".eighthscene").css("display","block");
+                    $(".dialogue12").css("display","block");
+                    $(".dialogueEffect12").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect12part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect12part3").css("display","block");
+                    },6000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect12part4").css("display","block");
+                    },9000);
+                    
+                });
+                //travel with smile END
+                
+                //path in not travel with smile
+                $("#declinegirl").click(function(){
+                    
+                    $(".dialogue11").css("display","none");
+                    $(".dialogue11footer").css("display","none")
+                    $(".dialogue12other").css("display","none");
+                    
+                    $(".dialogueEffect11part2").css("display","none");
+                    
+                    $(".dialogue12other").css("display","block");
+                    $(".dialogueEffect12other").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect12otherpart2").css("display","block");
+                    },3000);
+                    
+                    
+                });
+                
+                $("#next12other").click(function(){
+                    $(".dialogue12other").css("display","none");
+                    
+                    $(".dialogueEffect13part2").css("display","none");
+                    
+                    $(".dialogue13other").css("display","block");
+                    $(".dialogueEffect13other").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect13otherpart2").css("display","block");
+                    },3000);
+                });
+                
+                $("#next13other").click(function(){
+                    $(".seventhscene").css("display","none");
+                    $(".dialogue13other").css("display","none");
+                    
+                    
+                    $(".dialogueEffect12part2").css("display","none");
+                    $(".dialogueEffect12part3").css("display","none");
+                    $(".dialogueEffect12part4").css("display","none");
+                    
+                    $(".eighthscene").css("display","block");
+                    $(".dialogue12").css("display","block");
+                    $(".dialogueEffect12").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect12part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect12part3").css("display","block");
+                    },6000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect12part4").css("display","block");
+                    },9000);
+                });
+                
+                //path in not travel with smile END
+                
+                $("#next12").click(function(){
+                    $(".dialogue12").css("display","none");
+                    
+                    $(".dialogueEffect13part2").css("display","none");
+                    $(".dialogueEffect13part3").css("display","none");
+                    $(".dialogueEffect13part4").css("display","none");
+                    
+                    $(".dialogue13").css("display","block");
+                    $(".dialogueEffect13").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect13part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect13part3").css("display","block");
+                    },6000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect13part4").css("display","block");
+                    },9000);
+                });
+                
+                $("#next13").click(function(){
+                    $(".eighthscene").css("display","none");
+                    $(".dialogue13").css("display","none");
+                    
+                    
+                    $(".ninthscene").css("display","block");
+                    $(".dialogue14").css("display","block");
+                });
+                
+                $("#next14").click(function(){
+                    $(".dialogue14").css("display","none");
+                    $(".dialogue14Effect").css("display","none");
+                    
+                    $(".dialogue15").css("display","block");
+                });
+                
+                $("#next15").click(function(){
+                    $(".ninthscene").css("display","none");
+                    $(".dialogue15").css("display","none");
+                    
+                    
+                    $(".dialogueEffect16part2").css("display","none");
+                    $(".dialogueEffect16part3").css("display","none");
+                    
+                    $(".tenthscene").css("display","block");
+                    $(".dialogue16").css("display","block");
+                    $(".dialogueEffect16").css("display","block");
+                    setTimeout(function(){;
+                        $(".dialogueEffect16part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect16part3").css("display","block");
+                    },6000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect16part4").css("display","block");
+                    },9000);
+                });
+                
+                $("#next16").click(function(){
+                    $(".dialogue16").css("display","none");
+                    
+                    
+                    $(".dialogueEffect17part2").css("display","none");
+                    $(".dialogueEffect17part3").css("display","none");
+                    
+                    $(".dialogue17").css("display","block");
+                    $(".dialogueEffect17").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $(".dialogueEffect17part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect17part3").css("display","block");
+                    },6000);
+                });
+                
+                $("#next17").click(function(){
+                    $(".dialogue17").css("display","none");
+                    
+                    
+                    $(".dialogueEffect18part2").css("display","none");
+                    $(".dialogueEffect18part3").css("display","none");
+                    
+                    $(".dialogue18").css("display","block");
+                    $(".dialogueEffect18").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $(".dialogueEffect18part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect18part3").css("display","block");
+                    },6000);
+                });
+                
+                $("#next18").click(function(){
+                    $(".dialogue18").css("display","none");
+                    
+                    
+                    $(".dialogueEffect19part2").css("display","none");
+                    
+                    $(".dialogue19").css("display","block");
+                    $(".dialogueEffect19").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $(".dialogueEffect19part2").css("display","block");
+                    },3000);
+                });
+                
+                $("#next19").click(function(){
+                    $(".dialogue19").css("display","none");
+                    
+                    
+                    $(".dialogueEffect20part2").css("display","none");
+                    $(".dialogueEffect20part3").css("display","none");
+                    
+                    $(".dialogue20").css("display","block");
+                    $(".dialogueEffect20").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $(".dialogueEffect20part2").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $(".dialogueEffect20part3").css("display","block");
+                    },6000);
+                });
+                
+                $("#next20").click(function(){
+                    window.location.replace("cave.html");
+                });
+                
+                
+                /*
+                setTimeout(function(){
+                        $(".introduction").css("display","none");
+                        $(".beginning").css("display","block");
+                    },45000);
+                    */
             });
         </script>
         
@@ -553,6 +870,31 @@
             align-content: center;
             position:relative;
         }
+        
+        .seventhscene{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        .eighthscene{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        .ninthscene {
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        .tenthscene{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
         /* Song END */
         
         /* Dialogues */
@@ -799,6 +1141,584 @@
                 typing 3.5s steps(40, end),
                 blink-caret .75s step-end infinite;
         }
+        
+        .dialogue9{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect9{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogue9other{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect9other{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue10{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect10{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect10part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect10part3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue11{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect11{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect11part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect11part3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect11part4{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        /* not travel with smile*/
+        .dialogue12other{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect12other{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect12otherpart2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue13other{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect13other{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        /* not travel with smile end*/
+        
+        .dialogue12{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect12{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect12part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect12part3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect12part4{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue13{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect13{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect13part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect13part3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect13part4{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue14{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect14{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue15{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect15{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue16{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect16{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect16part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect16part3 {
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue17{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect17{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect17part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect17part3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue18{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect18{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect18part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect18part3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue19{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect19{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect19part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        .dialogue20{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialogueEffect20{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect20part2{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        .dialogueEffect20part3{
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
         /*modal for note (lost soul)*/
         .modal-content{
         background: url(Pictures/oldpaper2.jpg) no-repeat;
@@ -1012,7 +1932,7 @@
                                 <img src="Pictures/darkforest2.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
                                 
                                 <div class="dialoguenotsavegirl2">
-                                    <p class="dialoguenotsaveEffect2">*Why am I still hearing that voice...*</p>
+                                    <p class="dialoguenotsaveEffect2">Why am I still hearing that voice...</p>
                                     <!-- music
                                     <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
                                             allow="autoplay" style="display:none" id="iframeAudio">
@@ -1026,7 +1946,7 @@
                                 <img src="Pictures/darkforest3.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
                                 
                                 <div class="dialoguenotsavegirl3">
-                                    <p class="dialoguenotsaveEffect3">*It seems that the voice I'm hearing is coming closer*</p>
+                                    <p class="dialoguenotsaveEffect3">It seems that the voice I'm hearing is coming closer</p>
                                     <!-- music
                                     <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
                                             allow="autoplay" style="display:none" id="iframeAudio">
@@ -1054,6 +1974,196 @@
                                 
                             </div>
                             
+                            <div class="seventhscene"> <!-- approaching smile-->
+                                <img src="Pictures/meetingsmile2.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialogue9">
+                                    <p class="dialogueEffect9">Crying girl:hmmm... Who are you? Please don't hurt me...</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next9" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue9other">
+                                    <p class="dialogueEffect9other">Crying girl: Whoever you are please help me...</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next9other" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue10">
+                                    <p class="dialogueEffect10">I won't hurt you..</p>
+                                    <p class="dialogueEffect10part2">what's your name? Why are you alone </p>
+                                    <p class="dialogueEffect10part3">and crying in here in the woods?</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next10" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue11">
+                                    <p class="dialogueEffect11">Crying girl: hmm.. My name is Smile..... </p>
+                                    <p class="dialogueEffect11part2">My family is in the city but... </p>
+                                    <p class="dialogueEffect11part3">they were captured by an unknown wizard...</p>
+                                    <p class="dialogueEffect11part4">you should help me please.. </p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                </div>
+                                
+                                <!-- not travel with smile path -->
+                                <div class="dialogue12other">
+                                    <p class="dialogueEffect12other">Smile: Please, I'll just be behind you..</p>
+                                    <p class="dialogueEffect12otherpart2">You won't even notice me... </p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next12other" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue13other">
+                                    <p class="dialogueEffect13other">Okay, suit yourself...</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next13other" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <!-- not travel with smile path end-->
+                            </div>
+                            
+                            <div class="eighthscene"> <!-- Getting out of dark forest with smile-->
+                                <img src="Pictures/darkforestwithsmile.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialogue12">
+                                    <p class="dialogueEffect12">Smile where are we?..   </p>
+                                    <p class="dialogueEffect12part2">I might be sleeping.. But this forest for is so wide...  </p>
+                                    <p class="dialogueEffect12part3">I should go home too.. to my parents.. </p>
+                                    <p class="dialogueEffect12part4">they might be worrying...</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next12" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue13">
+                                    <p class="dialogueEffect13">Smile: This forest is called magic forest </p>
+                                    <p class="dialogueEffect13part2">they say that no evil can enter here...</p>
+                                    <p class="dialogueEffect13part3">that's why I go straight here and my city </p>
+                                    <p class="dialogueEffect13part4">is just straight ahead.. parents.. </p>
+                                    
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next13" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                            
+                            <div class="ninthscene"> <!-- Getting out of dark forest with smile-->
+                                <img src="Pictures/darkforestinstawizard.png" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialogue14">
+                                    <p class="dialogueEffect14">*You realize that this is not an ordinary dimension*</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next14" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue15">
+                                    <p class="dialogueEffect15">WHAT IS THAT!? </p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next15" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                            
+                            <div class="tenthscene"> <!-- Getting out of dark forest with smile-->
+                                <img src="Pictures/darkforestwithsmile.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialogue16">
+                                    <p class="dialogueEffect16">I think I saw a man... </p>
+                                    <p class="dialogueEffect16part2">but he suddenly disappeared..</p>
+                                    <p class="dialogueEffect16part3">a wizard maybe? Are they real?</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next16" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue17">
+                                    <p class="dialogueEffect17">Smile: Yes a wizard that has powers..</p>
+                                    <p class="dialogueEffect17part2">they we're the first before us..</p>
+                                    <p class="dialogueEffect17part3">By the way, Why are you here in this forest?..</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next17" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue18">
+                                    <p class="dialogueEffect18">I don't know, I was just sleeping and then..</p>
+                                    <p class="dialogueEffect18part2">I woke up in this forest..</p>
+                                    <p class="dialogueEffect18part3">I dont usually go to different places..</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next18" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue19">
+                                    <p class="dialogueEffect19">Smile: Why?.. You should go out</p>
+                                    <p class="dialogueEffect19part2">and play with your friends...</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next19" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialogue20">
+                                    <p class="dialogueEffect20">I dont usually talk to anyone..</p>
+                                    <p class="dialogueEffect20part2">I just stay in my house.. But.. in here.. </p>
+                                    <p class="dialogueEffect20part3">I feel I should save you from something..</p>
+                                    <!-- music
+                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
+                                            allow="autoplay" style="display:none" id="iframeAudio">
+                                    </iframe> 
+                                    -->
+                                    <button id="next20" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                            
                         </div>
                         <!-- starting screen end-->
                     </div>
@@ -1076,10 +2186,15 @@
                             <div class="dialogue8footer" style="background-color: white; color: black; padding: 0px;">
                                     <p class="dialogueEffect8">*You see a little girl crying...*</p>
                                 <button id="next8" class="btn btn-dark btn-block">Approach the crying girl and speak to her.</button>
-                                <button id="notsave" class="btn btn-dark btn-block">Just pass-by because you don't know her.</button>
+                                <button id="passbygirl" class="btn btn-dark btn-block">Just pass-by because you don't know her.</button>
                             </div>
+                            <!--path in saving girl end -->
                             
-                            
+                            <div class="dialogue11footer" style="background-color: white; color: black; padding: 0px;">
+                                    <p class="dialogueEffect11">Will you help the girl?</p>
+                                <button id="travelwithgirl" class="btn btn-dark btn-block">Okay. let's go to the city and I will help you free your parents.</button>
+                                <button id="declinegirl" class="btn btn-dark btn-block">Sorry, I can't help you with that</button>
+                            </div>
                         </div>
                         
                     </div>

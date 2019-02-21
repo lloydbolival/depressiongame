@@ -46,8 +46,9 @@ Help the girl *Ok lets go to the city I will help you free your parents.
 
 Dont help *Sorry I cant help you with that (the girl will beg for you) Ok... lets go ill help you
 
+--------------------
 *while walking along the dark forest*
-you:Smile where are we?..  I might be sleeping the this forest for a long?... I should go home too.. to my parents.. they might be worrying...
+you:Smile where are we?..  I might be asleep in this forest for a long time?... I should go home too.. to my parents.. they might be worrying...
 
 smile:This forest is called magic forest they say that no evil can enter here...thats why I go straight here and my city is just straight ahead..
 *You realize that this is not an ordinary dimension*
