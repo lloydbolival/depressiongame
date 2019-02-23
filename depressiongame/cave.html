@@ -10,7 +10,105 @@
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         
         <script type="text/javascript">
-            
+            $(document).ready(function(){
+            //scenes hide
+                /*
+                $(".beginning").css("display","none");
+                */
+                $("#cavesecondscene").css("display","none");
+                $("#cavethirdscene").css("display","none");
+            //scenes hide
+            //dialogues hide
+                $("#dialoguecave2").css("display","none");
+                $("#dialogueinside1").css("display","none");
+                $("#dialogueinside2").css("display","none");
+                $("#dialogueinside3").css("display","none");
+                $("#dialogueinside4").css("display","none");
+                $("#dialogueinside5").css("display","none");
+                
+            //dialogues hide
+                $("#next1").click(function(){
+                    $("#dialoguecave1").css("display","none");
+                    
+                    $("#dialoguecaveEffect3").css("display","none");
+                    
+                    $("#dialoguecave2").css("display","block");
+                    $("#dialoguecaveEffect2").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialoguecaveEffect3").css("display","block");
+                    },3000);
+                });
+                
+                $("#next2").click(function(){
+                    $("#cavefirstscene").css("display","none");
+                    
+                    $("#cavesecondscene").css("display","block");
+                    $("#dialogueinside1").css("display","block");
+                    $("#dialogueinsideEffect1").css("display","block");
+                });
+                
+                $("#next3").click(function(){
+                    $("#cavesecondscene").css("display","none");
+                    
+                    $("#dialogueinsideEffect3").css("display","none");
+                    
+                    $("#cavethirdscene").css("display","block");
+                    $("#dialogueinside2").css("display","block");
+                    $("#dialogueinsideEffect2").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialogueinsideEffect3").css("display","block");
+                    },3000);
+                });
+                
+                $("#next4").click(function(){
+                    $("#dialogueinside2").css("display","none");
+                    
+                    $("#dialogueinsideEffect5").css("display","none");
+                    
+                    $("#dialogueinside3").css("display","block");
+                    $("#dialogueinsideEffect4").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialogueinsideEffect5").css("display","block");
+                    },3000);
+                });
+                
+                $("#next5").click(function(){
+                    $("#dialogueinside3").css("display","none");
+                    
+                    $("#dialogueinsideEffect7").css("display","none");
+                    $("#dialogueinsideEffect8").css("display","none");
+                    $("#dialogueinsideEffect9").css("display","none");
+                    
+                    $("#dialogueinside4").css("display","block");
+                    $("#dialogueinsideEffect6").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialogueinsideEffect7").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $("#dialogueinsideEffect8").css("display","block");
+                    },6000);
+                    setTimeout(function(){;
+                        $("#dialogueinsideEffect9").css("display","block");
+                    },9000);
+                });
+                
+                $("#next6").click(function(){
+                    $("#dialogueinside4").css("display","none");
+                    
+                    $("#dialogueinside5").css("display","block");
+                    $("#dialogueinsideEffect10").css("display","block");
+                });
+                
+                $("#next7").click(function(){
+                    $("#dialogueinside5").css("display","none");
+                    
+                    
+                });
+                
+            });
         </script>
     </head>
     
@@ -54,7 +152,7 @@
         }
         
         /* Song */
-        .cavefirstscene {
+        .cavescene {
             height: 100%;
             width: 100%;
             align-content: center;
@@ -76,39 +174,6 @@
             
         }
         .dialoguecaveEffect1 {
-            /* typing effect*/
-            overflow: hidden; 
-            border-right: .15em solid white;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em; 
-            animation: 
-                typing 3.5s steps(40, end),
-                blink-caret .75s step-end infinite;
-        }
-        .dialoguecaveEffect1part2 {
-            /* typing effect*/
-            overflow: hidden; 
-            border-right: .15em solid white;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em; 
-            animation: 
-                typing 3.5s steps(40, end),
-                blink-caret .75s step-end infinite;
-        }
-        .dialoguecaveEffect1part3 {
-            /* typing effect*/
-            overflow: hidden; 
-            border-right: .15em solid white;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em; 
-            animation: 
-                typing 3.5s steps(40, end),
-                blink-caret .75s step-end infinite;
-        }
-        .dialoguecaveEffect1part4 {
             /* typing effect*/
             overflow: hidden; 
             border-right: .15em solid white;
@@ -157,6 +222,7 @@
                         <!-- starting screen -->
                         
                         <div class="scenes">
+                            <!--
                             <div class="cavefirstscene">
                                 <img src="Pictures/cave.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
                                 <div class="dialoguecave">
@@ -165,15 +231,75 @@
                                     <p class="dialoguecaveEffect1part3"></p>
                                     <p class="dialoguecaveEffect1part4"></p>
                                     
-                                    <!-- music
-                                    <iframe src="song/Schalas%20Theme%20-%20Chrono%20Trigger%20Music%20Extended.mp3"    
-                                            allow="autoplay" style="display:none" id="iframeAudio">
-                                    </iframe> 
-                                    -->
+                                    
                                     <button id="next1" class="btn btn-dark pull-right readmore">Next</button>
                                 </div>
                             </div>
+                            -->
+                            
+                            <div class="cavescene" id="cavefirstscene">
+                                <img src="Pictures/cave.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                <div class="dialoguecave" id="dialoguecave1">
+                                    <p class="dialoguecaveEffect1" id="dialoguecaveEffect1">Is this the way to the city?</p>
+                                    
+                                    
+                                    <button id="next1" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecave" id="dialoguecave2">
+                                    <p class="dialoguecaveEffect1" id="dialoguecaveEffect2">Smile: Yes, we should pass by..</p>
+                                    <p class="dialoguecaveEffect1" id="dialoguecaveEffect3">Inside the cave there's a way out...</p>
+                                    
+                                    <button id="next2" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <div class="cavescene" id="cavesecondscene">
+                                <img src="cave/insidecave1.png" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                <div class="dialoguecave" id="dialogueinside1">
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect1">Unknown Voice: Who's there?...</p>
+                                    
+                                    <button id="next3" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                            
+                            <div class="cavescene" id="cavethirdscene">
+                                <img src="cave/insidecave2.png" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                <div class="dialoguecave" id="dialogueinside2">
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect2">We won't hurt you...</p>
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect3">Why are you here...</p>
+                                    
+                                    <button id="next4" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecave" id="dialogueinside3">
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect4">Ilodor: Im a wizard... I am Ildor...</p>
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect5">one of the wizard that protects the city... </p>
+                                    
+                                    <button id="next5" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecave" id="dialogueinside4">
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect6">I'm here because of</p>
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect7"> the prophecy on this walls...</p>
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect8">that "The savior will be here one day"... </p>
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect9">*he points at your heart*</p>
+                                    
+                                    <button id="next6" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecave" id="dialogueinside5">
+                                    <p class="dialoguecaveEffect1" id="dialogueinsideEffect10">Why are you pointing at my chest?</p>
+                                    
+                                    <button id="next7" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
+                        
                         <!-- starting screen end-->
                     </div>
                     
@@ -181,8 +307,8 @@
                     <!-- footer -->
                     <div id="footer" style="margin-top: 5%; margin-bottom: 5%; width: 95%; ">
                         <div class="footer">
-                            <div class="dialoguecavefooter" style="background-color: white; color: black; padding: 0px;">
-                                    <p class="dialoguecaveEffectcave"></p>
+                            <div class="dialoguecave" style="background-color: white; color: black; padding: 0px;">
+                                    <p class="dialoguecaveEffect1"></p>
                                 
                             </div>
                             
