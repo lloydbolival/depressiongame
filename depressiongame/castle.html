@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>One's Alternative: The Castle</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">
+            //entering castle scene
+            $(document).ready(function(){
+                $("#dialoguecastleEffect2").css("display","none");
+                setTimeout(function(){;
+                        $("#dialoguecastleEffect2").css("display","block");
+                },3000);
+                
+                
+                
+                
+            //scenes hide
+                /*
+                    $("#castlescene1").css("display","none");
+                */
+                $("#castlescene2").css("display","none");
+                $("#castlescene3").css("display","none");
+            //scenes hide
+            //dialogues hide
+                $("#dialoguecastle2").css("display","none");
+                $("#dialoguecastle3").css("display","none");
+                $("#dialoguecastle4").css("display","none");
+                
+                $("#dialogueinsidecastle1").css("display","none");
+                $("#dialogueinsidecastle2").css("display","none");
+                $("#dialogueinsidecastle3").css("display","none");
+                $("#dialogueinsidecastle4").css("display","none");
+                $("#dialogueinsidecastle5").css("display","none");
+                $("#dialogueinsidecastle6").css("display","none");
+                $("#dialogueinsidecastle7").css("display","none");
+                $("#dialogueinsidecastle8").css("display","none");
+                $("#dialogueinsidecastle9").css("display","none");
+                $("#dialogueinsidecastle10").css("display","none");
+                $("#dialogueinsidecastle11").css("display","none");
+                
+                $("#dialoguecastlerestored1").css("display","none");
+                
+                $("#dialoguecastlefooter1").css("display","none");
+                $("#dialoguecastlefooter2").css("display","none");
+            //dialogues hide
+                $("#next1").click(function(){
+                    $("#dialoguecastle1").css("display","none");
+                    
+                    $("#dialoguecastleEffect4").css("display","none");
+                    
+                    $("#dialoguecastle2").css("display","block");
+                    $("#dialoguecastleEffect3").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialoguecastleEffect4").css("display","block");
+                    },3000);
+                });
+                
+                $("#next2").click(function(){
+                    $("#castlescene1").css("display","none");
+                    
+                    $("#dialogueinsidecastleEffect2").css("display","none");
+                    
+                    $("#castlescene2").css("display","block");
+                    $("#dialogueinsidecastle1").css("display","block");
+                    $("#dialogueinsidecastleEffect1").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect2").css("display","block");
+                    },3000);
+                });
+                
+                $("#nextinside1").click(function(){
+                    $("#dialogueinsidecastle1").css("display","none");
+                    
+                    $("#dialogueinsidecastleEffect3").css("display","none");
+                    
+                    $("#dialogueinsidecastle2").css("display","block");
+                    $("#dialogueinsidecastleEffect2").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect3").css("display","block");
+                    },3000);
+                });
+                
+                $("#nextinside2").click(function(){
+                    $("#dialogueinsidecastle2").css("display","none");
+                    
+                    $("#dialogueinsidecastle3").css("display","block");
+                    $("#dialogueinsidecastleEffect4").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialoguecastlefooter1").css("display","block");
+                    },3000);
+                    
+                });
+                
+                $("#choicecastle1").click(function(){
+                    $("#dialogueinsidecastle3").css("display","none");
+                    $("#dialoguecastlefooter1").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastleEffect6").css("display","none");
+                    $("#dialogueinsidecastleEffect7").css("display","none");
+                    
+                    $("#dialogueinsidecastle4").css("display","block");
+                    $("#dialogueinsidecastleEffect5").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect6").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect7").css("display","block");
+                    },6000);
+                });
+                
+                $("#nextinside3").click(function(){
+                    $("#dialogueinsidecastle4").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastle5").css("display","block");
+                    $("#dialogueinsidecastleEffect8").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialoguecastlefooter2").css("display","block");
+                    },3000);
+                });
+                
+                $("#choicecastle2").click(function(){
+                    $("#dialogueinsidecastle3").css("display","none");
+                    $("#dialoguecastlefooter1").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastleEffect10").css("display","none");
+                    $("#dialogueinsidecastleEffect11").css("display","none");
+                    
+                    $("#dialogueinsidecastle6").css("display","block");
+                    $("#dialogueinsidecastleEffect9").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect10").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect11").css("display","block");
+                    },6000);
+                    
+                });
+                
+                $("#nextinside4").click(function(){
+                    $("#dialogueinsidecastle6").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastle7").css("display","block");
+                    $("#dialogueinsidecastleEffect12").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialoguecastlefooter2").css("display","block");
+                    },3000);
+                });
+                
+                $("#choicecastle3").click(function(){
+                    $("#dialogueinsidecastle7").css("display","none");
+                    $("#dialogueinsidecastle5").css("display","none");
+                    
+                    $("#dialoguecastlefooter2").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastleEffect14").css("display","none");
+                    $("#dialogueinsidecastleEffect15").css("display","none");
+                    
+                    $("#dialogueinsidecastle8").css("display","block");
+                    $("#dialogueinsidecastleEffect13").css("display","block");
+                    
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect14").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect15").css("display","block");
+                    },6000);
+                    
+                });
+                
+                $("#choicecastle4").click(function(){
+                    $("#dialogueinsidecastle7").css("display","none");
+                    $("#dialoguecastlefooter2").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastleEffect17").css("display","none");
+                    
+                    $("#dialogueinsidecastle9").css("display","block");
+                    $("#dialogueinsidecastleEffect16").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect17").css("display","block");
+                    },3000);
+                });
+                
+                $("#nextinside6").click(function(){
+                    $("#dialogueinsidecastle9").css("display","none");
+                    $("#dialoguecastlefooter2").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastleEffect19").css("display","none");
+                    
+                    $("#dialogueinsidecastle10").css("display","block");
+                    $("#dialogueinsidecastleEffect18").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect19").css("display","block");
+                    },3000);
+                    
+                });
+                
+                $("#nextinside7").click(function(){
+                    $("#dialogueinsidecastle10").css("display","none");
+                    
+                    
+                    $("#dialogueinsidecastleEffect21").css("display","none");
+                    $("#dialogueinsidecastleEffect22").css("display","none");
+                    
+                    $("#dialogueinsidecastle11").css("display","block");
+                    $("#dialogueinsidecastleEffect20").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect21").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect22").css("display","block");
+                    },6000);
+                });
+                
+                $("#nextinside8").click(function(){
+                    $("#dialogueinsidecastle11").css("display","none");
+                    
+                    $("#dialogueinsidecastleEffect14").css("display","none");
+                    $("#dialogueinsidecastleEffect15").css("display","none");
+                    
+                    $("#dialogueinsidecastle8").css("display","block");
+                    $("#dialogueinsidecastleEffect13").css("display","block");
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect14").css("display","block");
+                    },3000);
+                    setTimeout(function(){;
+                        $("#dialogueinsidecastleEffect15").css("display","block");
+                    },6000);
+                });
+                
+                $("#nextinside8").click(function(){
+                    $("#dialogueinsidecastle8").css("display","none");
+                    $("#castlescene2").css("display","none");
+                    
+                    
+                    $("#castlescene3").css("display","block");
+                    
+                    $("#dialoguecastlerestored1").css("display","block");
+                    $("#dialoguecastlerestoredEffect1").css("display","block");
+                    
+                });
+                
+                
+            });
+            
+            
+        </script>
+    </head>
+    
+    <style>
+        body {
+            background-color: black;
+            align-content: center;
+            font-size: 20px;
+            color: white;
+            font-family: Tahoma;
+        }
+        #whole_screen{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 1%;
+            padding-right: 1%;
+            min-height: 95%;
+            min-width: 95%;
+                
+        }
+        #header, #main_screen, #footer{
+            background-color: white;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        .footer{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+        }
+        
+        /* Song */
+        .castlescene {
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            position:relative;
+                
+        }
+        /* Song END */
+        
+        /* Dialogues */
+        .dialoguecastle{
+            position: absolute;
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            position:absolute; 
+            bottom:0; 
+            padding:10px 20px; 
+            
+            
+        }
+        .dialoguecastleEffect1 {
+            /* typing effect*/
+            overflow: hidden; 
+            border-right: .15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em; 
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+            /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+            /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+        }
+        
+        /* Dialogues END*/
+        
+        .readmore {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 1px;
+            margin-right: 1%;
+            margin-bottom: 1%;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="whole_screen">
+                    <!-- header -->
+                    <div id="header" style="margin-top: 5%; margin-bottom: 5%; height: 10%; width: 95%; ">
+                        <h1 style="text-align: center; font-size: 20dp; color: black">One's Alternative</h1>
+                    </div> <!-- header end -->
+                    
+                    <!-- main screen -->
+                    <div id="main_screen" style="margin-top: 5%; margin-bottom: 5%; height: 68%; width: 95%; ">
+                        <!-- starting screen -->
+                        
+                        <div class="scenes">
+                            <div class="castlescene" id="castlescene1">
+                                <img src="castle/enteringcastle.png" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialoguecastle" id="dialoguecastle1">
+                                    <p class="dialoguecastleEffect1" id="dialoguecastleEffect1">Knights: Our king is acting strange,</p>
+                                    <p class="dialoguecastleEffect1" id="dialoguecastleEffect2">We can’t talk to him and he is angry...</p>
+                                    
+                                    <button id="next1" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialoguecastle2">
+                                    <p class="dialoguecastleEffect1" id="dialoguecastleEffect3">I must help your king </p>
+                                    <p class="dialoguecastleEffect1" id="dialoguecastleEffect4">and end this madness!</p>
+                                    
+                                    <button id="next2" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                            </div>
+                                
+                            
+                            <div class="castlescene" id="castlescene2">
+                                <img src="castle/speakingtotheking.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle1">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect1">King: Who’s there?!</p>
+                                    
+                                    <button id="nextinside1" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle2">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect2">Your highness, I can offer you my help.</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect3">I know what causes you that...</p>
+                                    
+                                    <button id="nextinside2" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle3">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect4">King: No! get out of here!</p>
+                                    
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle4">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect5">You are just confused please listen to me. </p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect6">Your people need you.</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect7">please don't give up...</p>
+                                    
+                                    <button id="nextinside3" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle5">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect8">King: Why should I listen to a mere outsider?!</p>
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle6">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect9">Smile: Warrior... Don't lose hope. </p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect10">If you give-up, all of this...</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect11">Would be for nothing...</p>
+                                    
+                                    <button id="nextinside4" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle7">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect12">Thank you for encouraging me, Smile...</p>
+                                    
+                                </div>
+                                
+                                
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle8">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect13">King: You are right.. What is this..</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect14">Is this the power...</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect15">of not giving up?!</p>
+                                    
+                                    <button id="nextinside5" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle9">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect16">Smile: Warrior... Don't lose hope. </p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect17">Believe in him like how I believed in you!</p>
+                                    
+                                    <button id="nextinside6" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle10">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect18">Thank you for believing in me, Smile...</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect19">I think it's time to believe in myself too.</p>
+                                    
+                                    <button id="nextinside7" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                <div class="dialoguecastle" id="dialogueinsidecastle11">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect20">My King! Listen to me!</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect21">If you give-up now...</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect22">Then who will save your people?!</p>
+                                    
+                                    <button id="nextinside8" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                                
+                                
+                                <!--
+                                <div class="dialoguecastle" id="dialogueinsidecastle8">
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect9">King: What is this feeling?.. </p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect10">Is this power?...</p>
+                                    <p class="dialoguecastleEffect1" id="dialogueinsidecastleEffect11">I feel alive again!</p>
+                                    
+                                    <button id="nextinside4" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                -->
+                            </div>
+                            
+                            <div class="castlescene" id="castlescene3">
+                                <img src="castle/kingrestored.jpg" alt="Can't load picture" class="category-banner img-responsive" width="100%" height="100%" style="position: relative">
+                                
+                                <div class="dialoguecastle" id="dialoguecastlerestored1">
+                                    <p class="dialoguecastleEffect1" id="dialoguecastlerestoredEffect1">Yes, my king.</p>
+                                    
+                                    <button id="nextrestored1" class="btn btn-dark pull-right readmore">Next</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- starting screen end-->
+                    </div>
+                    
+                    <!-- main screen END-->
+                    <!-- footer -->
+                    <div id="footer" style="margin-top: 5%; margin-bottom: 5%; width: 95%; ">
+                        <div class="footer">
+                            
+                            <div id="dialoguecastlefooter1" style="background-color: white; color: black; padding: 0px;">
+                                <p class="dialoguecastleEffect1">What should I tell the king?</p>   
+                                <button id="choicecastle1" class="btn btn-dark btn-block">You must listen to me your highness, Don’t let yourself be consumed by the darkness... The people are on your side... You just need to go out and talk to them... You are their king after all.</button>
+                                <button id="choicecastle2" class="btn btn-dark btn-block">I can’t face the king because I felt that too... I should just leave now before something happens... I should just give this up...</button>
+                            </div>
+                            
+                            <div id="dialoguecastlefooter2" style="background-color: white; color: black; padding: 0px;">
+                                <p class="dialoguecastleEffect1">What should I say...?</p>   
+                                <button id="choicecastle3" class="btn btn-dark btn-block">I came from a world in which hope is hard to find... I felt the same thing before that’s why I understand you... It made me realize that there is always a possibility... So please, don’t let things be this way and face the reality!</button>
+                                <button id="choicecastle4" class="btn btn-dark btn-block">Maybe the king is right... I am a nobody... I should just stop persuading him...</button>
+                            </div>
+                            
+                            
+                        </div>
+                    </div> <!-- footer end -->
+                </div> <!-- whole screen id end-->
+            </div> <!-- row class end -->
+        </div> <!--container class end-->
+    </body>
+    
+</html>
